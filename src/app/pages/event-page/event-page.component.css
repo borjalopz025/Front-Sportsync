@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 450px){
+    body{
+        margin-bottom: 10%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: 2%;
+        
+    }
+    .timer{
+        text-align: center;
+        color: gray;
+        padding-right: 5%;
+        height: 3.5rem;
+    }
+    select{
+        height: 3rem;
+        border: none;
+        margin: 10px;
+        padding-left: 10px;
+        border-radius: 15px;
+        background-color: rgb(244, 241, 241);
+    }
+    input{
+        height: 4rem;
+        border: none;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: rgb(244, 241, 241);
+    }
+    textarea{
+        height: 5rem;
+        border: none;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: rgb(244, 241, 241);
+        
+    }
+    .titlevent{
+        padding-left: 3%;
+    }
+    .bigtext{
+        height: 8rem;
+        padding: 20px;
+    }
+    ::placeholder{
+
+        text-align: center;
+    }
+    .selecctor{
+        height: 3rem;
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+    }
+    button{
+        height: 2.4rem;
+        border: none;
+        margin: 5px;
+        border-radius: 15px;
+    }
+    .made{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+    }
+}

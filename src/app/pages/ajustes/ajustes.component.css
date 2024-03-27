@@ -1,0 +1,95 @@
+
+
+
+
+@media screen and (max-width: 450px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contraseña{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(214, 243, 248) ;
+        background-color: rgb(214, 243, 248) ;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        border-radius: 10px;
+        width: 80%;
+
+    }
+    .provi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(214, 243, 248) ;
+        margin-bottom: 3%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        width: 80%;
+    }
+    input{
+        width: 79%;
+        border-radius: 8px;
+        background-color: rgb(240, 237, 237);
+        font-family: sans-serif;
+    }
+    h1{
+        margin-top: 15%;
+        font-family: sans-serif;
+
+    }
+    p{
+        margin-top: 5%;
+        font-size: medium;
+        margin-right: 55%;
+        font-family: sans-serif;
+    }
+    .cont{
+        margin-left: 3%;
+    }
+    
+    .put{
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 77%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .b{
+        width: 113%;
+        border-radius: 8px;
+        height: 2.4rem;
+        border: none;
+        margin: 5px;
+        border-radius: 15px;
+    }
+    
+    
+
+    .b2{
+        width: 113%;
+        margin-bottom: 5%;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        height: 2.4rem;
+        border: none;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    
+}

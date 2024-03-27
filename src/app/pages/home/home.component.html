@@ -1,0 +1,17 @@
+<div *ngIf="home.length != 0; else lista" class="tarjeta">
+
+ 
+    <div id="card">
+        <ng-container *ngFor="let cardEvent of home">
+            
+          <app-card [event]="cardEvent"></app-card>
+        </ng-container>
+
+    </div>
+
+
+</div>
+<ng-template #lista>
+    <h1>NO HAY EVENTOS</h1>
+</ng-template>
+

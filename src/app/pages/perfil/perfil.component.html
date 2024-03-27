@@ -1,0 +1,69 @@
+<main>
+
+    <div class="fotoBoton">
+         <section class="imagen"><img class="imgPerfil" src={{user.foto}}></section>
+         <aside class="info">
+               <div class="infoPerfil">
+                        <div class="fotos-Subidas">
+                            <p class="total">345</p>
+                            <p class="nomb">Fotos</p>
+                        </div>
+                        <div class="fotos-Subidas">
+                            <p class="total">345</p>
+                            <p class="nomb">Eventos</p>
+                        </div>
+                        <div class="fotos-Subidas">
+                            <p class="total">345</p>
+                            <p class="nomb">Seguidos</p>
+                        </div>
+
+               </div>
+               <a (click)="botonEditar()"><p type="button" class="btn btn-dark">Editar Perfil</p></a>
+         </aside>
+    </div>
+
+    <div class="datos">
+        <h4 class="Nombre">{{user.nombre | mayus}}</h4>
+        <h5 class="Sport">{{this.spoortUs}}</h5>
+        <h5 class="description">{{user.descripcion | mayus}}</h5>
+    </div>
+
+    <div class="eventSeguid">
+        <button (click)="mostrarContenido1()" type="button" class="btn-event">Mis Eventos</button>
+        <button (click)="mostrarContenido2()" type="button" class="btn-event">Seguidos</button>
+    </div>
+
+    <div class="tarjetas">
+    <div *ngIf="mostrarContenido === 1" >
+    
+        <div  *ngFor="let per of eventPerfil" class="card" style="width: 18rem;" >
+            <img src={{per.foto}} class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">{{per.titulo | mayus}}</h5>
+            <p class="card-text">{{per.fecha | date}}<br>{{per.descripcion | mayus}}</p>
+            
+            </div>
+        </div>
+    
+    </div>
+   
+
+   
+    <div *ngIf="mostrarContenido === 2"  >
+
+        <div *ngFor="let eve of perfil" class="card" style="width: 18rem;">
+
+            <img src={{eve.foto}} class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">{{eve.titulo | mayus}}</h5>
+            <p class="card-text">{{eve.fecha | date}}<br>{{eve.descripcion | mayus}}</p>
+            <button class="boton btn-dark" (click)="borrar(eve.id_eventos)">Dejar de Seguir</button>
+            </div>
+       
+      
+        </div>
+    </div>
+    </div>
+
+</main>    
+

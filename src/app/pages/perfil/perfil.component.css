@@ -1,0 +1,251 @@
+@media screen and (max-width: 475px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .claseMostrar{
+        background-color: blue;
+        color: white;
+    }
+
+    .noMostrar{
+        background-color: grey;
+        color: wheat;
+    }
+
+    main{
+    
+        width: 100%;
+        font-family: sans-serif;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+    
+    }
+    .fotoBoton{
+        
+        height: 130px;
+        width: 360px;
+        margin-top: 15px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+    }
+    .imagen{
+
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+    
+    }
+    .imgPerfil{
+
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+    
+    }
+    .info{
+
+        height: 110px;
+        width: 240px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+    }
+    .infoPerfil{
+
+        width: 235px;
+        height: 60px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+
+    }
+    .fotos-Subidas{
+
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .total{
+
+        height: 20px;
+        font-size: 19px;
+    }
+    .nomb{
+
+        font-size:19px;
+        height: 20px;
+    }
+    .datos{
+
+        height: 120px;
+        width: 360px;
+        padding-left: 5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 5%;
+
+    }
+    .Nombre{
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .Sport{
+
+        font-size: 16px;
+
+    }
+    .description{
+
+        font-size: 16px;
+    }
+    .eventSeguid{
+
+        height: 45px;
+        width: 360px;
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 5%;
+
+    }
+    .btn-event{
+        background-color: #6db3d1;
+        color: white;
+        width: 125px;
+        height: 32px;
+        border-radius: 15px;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-event:hover{
+
+        background-color: black;
+        color: white;
+    }
+    .card{
+        
+        width: 300px;
+        background-color: rgb(214, 243, 248);
+        margin-top: 5%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .card-img-top{
+
+        margin-top: 8px;
+        margin-right: 5px;
+        width: 270px;
+        height: 180px;
+
+    }
+    .card-body{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+   }
+
+    .card-title{
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: bold;
+  }
+
+    .card-text{
+
+        margin-top: 10px;
+        font-size: 17px;
+        margin: 20px;
+        text-align: justify;
+    }
+    .btn{
+
+        color: white;
+        width: 117px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 17px;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          
+    }
+    .btn:hover{
+
+        background-color:#6db3d1;
+        color: white;
+    }
+    .boton{
+
+        color: white;
+        width: 150px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        font-size: 17px;
+        border: none;
+        background-color: black;
+
+    }
+    img{
+        margin-left: 2.2%;
+        margin-top: 2.5%;
+        width: 95%;
+    }
+    .carta{
+        width: 18rem;
+        background-color: rgb(150, 219, 231);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+    }
+    .tarjetas{
+
+        margin-bottom: 60px;
+    }
+
+}

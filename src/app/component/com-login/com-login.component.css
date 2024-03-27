@@ -1,0 +1,125 @@
+@media screen and (max-width: 450px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    main{
+
+        height: 810px;
+        width: 100%;
+        font-family: sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    img{
+        width: 50%;
+        border-radius: 15px;
+    }
+    .titu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15%;
+        margin-top: 15%;
+    }
+    h1{
+        font-family: roboto, sans-serif;
+        text-shadow: 4px 4px 3px rgb(228, 225, 225);
+        font-weight: bold;
+    }
+    
+    .con{
+        width: 80%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px ;
+        background-color:  rgb(214, 243, 248) ;
+
+        padding-top: 10%;
+        padding-bottom: 5%;
+
+    }
+    .fila{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+        width: 80%;
+        font-family: roboto, sans-serif;
+    }
+    .fila2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+        width: 80%;
+        font-family: roboto, sans-serif;
+    }
+    input{
+        width: 100%;
+        height: 46px;
+        padding: 3%;
+        border-radius: 15px;
+
+    }
+
+    .form-label{
+        margin-left: 5%;
+        font-size: 20px;
+    }
+   
+    .btn{
+        width: 80%;
+        padding-top: 5%;
+
+    }
+    button{
+        width: 100%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+    
+   
+    .dos{
+        padding-top: 20%;
+        font-family: roboto, sans-serif;
+    }
+    p{
+        font-family: roboto, sans-serif;
+        margin-top: 5%;
+    }
+    a{
+        color: blue;
+        font-family: roboto, sans-serif;
+        margin-top: 5%;
+        text-decoration: none;
+    }
+
+    .register{
+        display: flex;
+        padding-top: 15%;
+        gap: 5px;
+    }
+
+    .color{
+        color: rgb(31, 144, 182);
+        font-family: roboto, sans-serif;
+    }
+
+    .invalid-feedback{
+
+        font-size: 16px;
+        margin-left: 40px;
+        margin-top: 5px;
+    
+    }
+}

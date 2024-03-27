@@ -1,0 +1,97 @@
+@media screen and (max-width: 475px){
+    form{
+    
+        height: 820px;
+        width: 100%;
+        font-family: sans-serif;
+        margin-top: 10px;
+
+        display: flex;
+        align-items: center;
+        
+    }
+    .contenedor{
+    
+        height: 635px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    }
+    .titulo {
+         
+        width: 80%;
+        height: 40px;
+        margin-top: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    h3 {
+    
+        font-size: 30px;
+        font-weight: bold;
+        
+    }
+    .formulario{
+    
+        height: 410px;
+        width: 280px;
+        border-radius: 25px;
+        background-color: rgb(214, 243, 248);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+       
+    }
+    .form-check{
+    
+        width: 170px;
+        height: 35px;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    input{
+    
+        width: 30px;
+        height: 30px;
+        clip-path: circle(50% at 50% 50%);
+        background-color: rgb(244, 241, 241);
+       
+    }
+    .form-check-input{
+    
+        clip-path: circle(50% at 50% 50%);
+        border-radius: 50px;
+    }
+    label{
+    
+        height: 25px;
+        width: 80px;
+        font-size: 25px;
+        margin-bottom: 5px;
+    
+    }
+    button{
+    
+        width: 250px;
+        height: 45px;
+        margin-top: 30px;
+        margin-right: 5px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+    }

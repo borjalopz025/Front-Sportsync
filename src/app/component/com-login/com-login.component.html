@@ -1,0 +1,40 @@
+    <main>
+        <div class="titu">
+            <img src="./../../../assets/logo.png" >
+            <h1>Sport</h1>
+            <h1 class="color">Sync</h1>
+        </div>
+        <div class="con" [formGroup]="form_login">
+
+           <div class="fila">
+               <label class="form-label">Nombre de Usuario</label>
+               <input type="text" class="form-control" id="usuario" formControlName="usuario"
+               [ngClass]="{'is-invalid': (form_login.get('usuario').dirty || form_login.get('usuario').touched) && form_login.get('usuario').invalid}">
+               <div *ngIf="!form_login.get('usuario').valid" class="invalid-feedback">El campo obligatorio</div>
+           </div>
+
+           <div class="fila2">
+               <label class="form-label">Contraseña</label>
+               <input type="password" class="form-control" id="password" formControlName="password"
+               [ngClass]="{'is-invalid': form_login.get('password').invalid && (form_login.get('password').dirty || form_login.get('password').touched)}">
+               
+               <div *ngIf="!form_login.get('password').valid" class="invalid-feedback">
+                   <div *ngIf="form_login.get('password').errors.required">*Campo es Obligatorio</div>
+                   <div *ngIf="form_login.get('password').errors.minLength">Contraseña Incorrecta</div>
+               </div>
+           </div>    
+               
+            <div class="btn">
+                <a routerLink="" ><button (click)="iniciarSesion()" [disabled]="form_login.invalid">Iniciar sesion</button></a>
+            </div>
+        </div>
+        
+        <div class="ter">
+            <p class="dos">¿Has olvidado la contraseña?</p>
+            <div class="register">
+                <p >¿No tienes cuenta?</p>
+                <a routerLink="/register">Registrate</a>
+            </div>
+        </div>
+
+    </main>

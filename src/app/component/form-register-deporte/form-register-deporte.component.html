@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form [formGroup]="deporteForm">
+
+      <div class="contenedor">
+
+            <div class="titulo">
+                  <h3>Elige tus Deportes</h3>
+            </div>
+
+            <div class="formulario">
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="1" id="futbol" formControlName="futbol">
+                              <label class="form-check-label">Fútbol</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="3" id="baloncesto" formControlName="baloncesto">
+                              <label class="form-check-label">Baloncesto</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="6" id="volley" formControlName="volley">
+                              <label class="form-check-label">Volley</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="8" id="patinaje" formControlName="patinaje">
+                              <label class="form-check-label">Patinaje</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="7" id="natacion" formControlName="natacion">
+                              <label class="form-check-label">Natación</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="5" id="running" formControlName="running">
+                              <label class="form-check-label">Running</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="4" id="ciclismo" formControlName="ciclismo">
+                              <label class="form-check-label">Ciclismo</label>
+                        </div>
+
+                        <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="2" id="escalada" formControlName="escalada">
+                              <label class="form-check-label">Escalada</label>
+                        </div>
+
+            </div>
+
+            <button type="button" class="btn btn-dark" (click)="register()"  [disabled]="deporteForm.invalid">Registrar</button>
+
+      </div>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+
+<body>
+  <div class="card" style="width: 18rem;">
+    <img src={{event.foto}}>
+    <div class="card-body">
+    <h5 class="card-title">{{event.titulo | mayus}}</h5>
+    <p class="card-text">{{event.fecha | date}}<br>{{event.descripcion | mayus}}</p>
+    <button class="btn btn-dark" (click)="btnfol(); btnClick()">{{ stafol ? 'Seguido' : 'Unirse' }}</button>
+    </div>
+  </div>
+</body>

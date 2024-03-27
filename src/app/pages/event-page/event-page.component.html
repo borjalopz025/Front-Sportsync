@@ -1,0 +1,18 @@
+<body>
+    <form action="">
+        <input list="dataList" class="selecctor" placeholder="    ↓  Elige deporte abajo ↓ ">
+        <select id="dataList" placeholder="Elige deporte" (change)="selectSport($event.target.value)">
+            <option *ngFor="let list of dataList" [value]="list.deporte">{{list.deporte}}</option >
+        
+        </select>
+        <input type="text" class="titlevent" placeholder="Nombre del evento" #primero>
+        <input type="date" class="timer" placeholder="Fecha"#segundo>
+        <textarea type="text" class="bigtext" placeholder="Descripción" #tercero></textarea>
+        <textarea type="text" class="bigtext" placeholder="Insertar foto" #cuarto></textarea>
+        <div class="buttons">
+        <button class="made" type="button"  (click)="callevento(primero.value, segundo.value, tercero.value, cuarto.value)">Crear Evento</button>
+        <button routerLink="">Cancelar</button>
+        </div>
+    </form>
+</body>
+
